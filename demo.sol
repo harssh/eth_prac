@@ -78,8 +78,11 @@ contract Userm is mortal  {
 contract Providerm is mortal {
 
   string public providerName;
-  function Providerm  (string _name) {
+  function Providerm  (
+    string _name,
+    string _description) {
     providerName = _name;
+    description = _description;
   }
 }
 
